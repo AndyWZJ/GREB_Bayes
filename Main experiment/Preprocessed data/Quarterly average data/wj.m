@@ -1,0 +1,14 @@
+A = load('E:\GREB\air_quarter');
+t = Tiff('0001.tif','w');
+tagstruct.ImageLength = size(A,1);
+tagstruct.ImageWidth = size(A,2);
+tagstruct.Photometric = 1;
+tagstruct.BitsPerSample = 64;
+tagstruct.SamplesPerPixel =120;
+tagstruct.RowsPerStrip = 16;
+tagstruct.PlanarConfiguration = Tiff.PlanarConfiguration.Chunky;
+tagstruct.Software = 'MATLAB';
+tagstruct.SampleFormat = 3;
+t.setTag(tagstruct);
+t.write(A);
+t.close;

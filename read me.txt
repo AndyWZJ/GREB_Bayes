@@ -1,0 +1,41 @@
+An improved method of the Globally Resolved Energy Balance Model by the Bayes network
+ 
+
+introduction
+------------
+“An improved method of the Globally Resolved Energy Balance Model by the Bayes network” deals with data pre-processing, model simulation prediction and data visualization.
+ Therefore, the file contains the code for these three areas as well as the experimental code and data involved in this paper. 
+There are three experiments involved in this paper: 
+1. 5  Natural Breaks data simulation, 
+2. 7  Natural Breaks data simulation, 
+3. 9  Natural Breaks data simulation. 
+Each algorithm has a corresponding readme file to help the user run it. The user only needs to open the corresponding experimental code and run the code according to the prompts to resume the experiments in this paper.
+Hint: Most of the experimental codes are computed from graded data.
+
+
+component
+------------
+The file is divided into three parts, one is data pre-processing, including data interpolation and data grading;
+The second part is the main experiment, including the three experiments in this paper, each of which is independent of each other and can be performed by the user individually.
+The last part is the data analysis, including the visualization of the data in this paper.
+Data preprocessing: 1. data interpolation； 2. data classification.
+Main experiments: 1. 5  Natural Breaks data simulation. 2. 7  Natural Breaks data simulation. 3. 9  Natural Breaks data simulation.
+Data analysis: 
+1. global simulation of surface temperature and air temperature with improved methods, Figure 2 and Figure 3 of this paper  can be obtained from this code.
+2. global simulation accuracy mean vs. original model, Figure 4 of this paper  can be obtained from this code.
+3. global simulation accuracy vs. original model,  Figure 5 and Figure 6 of this paper  can be obtained from this code.
+4. global simulation accuracy for latitude change vs. original model. Figure 7 of this paper  can be obtained from this code.
+If you want to implement all the experiments in this article, you can run each experiment in turn in the main experiment。
+
+
+
+data
+------------
+
+The data used for the analysis in this paper have been pre-processed and the original data can be gotten from Environmental Predic-tion(NCEP)/ National Center for Atmospheric Research(NCAR), download from https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.pressure.html
+The original GREB model uses the model code from the Monash Simple Climate Model (MSCM) laboratory repository for the GREB model and runs the code using the Fortran language. The model code is available from https://doi.org/10.5281/zenodo.2232282}
+
+environment
+------------
+An improved method of the Globally Resolved Energy Balance Model by the Bayes networkThe research experiments were conducted on Windows 10 Professional Workstation Edition (CPU: R75800X; memory: 64GB) using MATLABR2021a environment. Before running the experimental code, it is enough to add the corresponding libraries (functions) to the path and modify the corresponding file paths.
+
